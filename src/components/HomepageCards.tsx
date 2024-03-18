@@ -9,7 +9,7 @@ interface CardProps {
 
 const HomepageCard: React.FC<CardProps> = ({ title, description, link }) => {
     return (
-        <Card align="center">
+        <Card variant="outline" align="center">
             <CardHeader>
                 <Heading size="md">{title}</Heading>
             </CardHeader>

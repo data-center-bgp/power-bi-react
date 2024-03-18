@@ -8,7 +8,7 @@ function Homepage() {
         <h1 className="mb-6 text-3xl font-bold text-gray-700">
           Archive for storing Power BI Dashboards
         </h1>
-        <div>
+        <div className="flex flex-col gap-5">
           <HomepageCard
             title="Dashboard Invoice PT Mashud Bersaudara International"
             description="View invoice dashboard of PT Mashud Bersaudara International (MASBRO)"
