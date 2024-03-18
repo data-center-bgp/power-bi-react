@@ -58,7 +58,7 @@ const Footer = () => {
       <Link href="/" isExternal>
         <Image
           w="100px"
-          src="/src/assets/logo-bpg.png"
+          src="/logo-bpg.png"
           alt="Barokah Perkasa Group"
         />
       </Link>
