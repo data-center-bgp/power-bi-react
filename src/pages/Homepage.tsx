@@ -1,14 +1,5 @@
-import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
-import {
-  Card,
-  CardBody,
-  CardHeader,
-  CardFooter,
-  Heading,
-  Text,
-  Button,
-} from "@chakra-ui/react";
+import HomepageCard from "../components/HomepageCards";
 
 function Homepage() {
   return (
@@ -18,56 +9,21 @@ function Homepage() {
           Archive for storing Power BI Dashboards
         </h1>
         <div>
-          <Card align="center">
-            <CardHeader>
-              <Heading size="md">
-                Dashboard Invoice PT Mashud Bersaudara International
-              </Heading>
-            </CardHeader>
-            <CardBody>
-              <Text>
-                View the dashboard of invoice of PT Mashud Bersaudara
-                International.
-              </Text>
-            </CardBody>
-            <CardFooter>
-              <Button as={Link} to="/invoice-masbro" colorScheme="blue">
-                View dashboard
-              </Button>
-            </CardFooter>
-          </Card>
-          <Card align="center">
-            <CardHeader>
-              <Heading size="md">
-Coming soon...              </Heading>
-            </CardHeader>
-            <CardBody>
-              <Text>
-Coming soon...
-              </Text>
-            </CardBody>
-            <CardFooter>
-              <Button as={Link} to="#" colorScheme="blue">
-                View dashboard
-              </Button>
-            </CardFooter>
-          </Card>
-          <Card align="center">
-            <CardHeader>
-              <Heading size="md">
-Coming soon...              </Heading>
-            </CardHeader>
-            <CardBody>
-              <Text>
-Coming soon...
-              </Text>
-            </CardBody>
-            <CardFooter>
-              <Button as={Link} to="#" colorScheme="blue">
-                View dashboard
-              </Button>
-            </CardFooter>
-          </Card>
+          <HomepageCard
+            title="Dashboard Invoice PT Mashud Bersaudara International"
+            description="View invoice dashboard of PT Mashud Bersaudara International (MASBRO)"
+            link="/invoice-masbro"
+          />
+                    <HomepageCard
+            title="Coming soon..."
+            description="Coming soon..."
+            link="/"
+          />
+                    <HomepageCard
+            title="Coming soon..."
+            description="Coming soon..."
+            link="/"
+          />
         </div>
       </div>
       <Footer />
